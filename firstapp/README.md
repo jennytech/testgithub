@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## README
 
 This README would normally document whatever steps are necessary to get the
@@ -23,7 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-=======
-# testgithub
-github
->>>>>>> 56151cfc4a6aad32b92a1da99d9f83df3bbc9ff8
