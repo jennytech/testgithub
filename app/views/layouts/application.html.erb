@@ -21,9 +21,13 @@
           <a class="navbar-brand" href="#">BIKE SHOP</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html.erb">Home</a></li>
-          <li><a href="about.html.erb">About</a></li>
-          <li><a href="contact.html.erb">Contact</a></li>
+           <li><%= link_to 'Home', root_path %></li>
+
+          <li><%= link_to 'About', static_pages_about_path %></li>
+
+          <li><%= link_to 'contact', static_pages_contact_path %></li>
+
+          <li><%= link_to 'Sales', products_path %></li>
         </ul>
       </div>
     </nav>
