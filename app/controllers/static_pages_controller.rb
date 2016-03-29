@@ -1,7 +1,5 @@
 class StaticPagesController < ApplicationController
-  def contact
-  end
-
   def landing_page
+  	@products = Products.limit(3)
   end
 end
