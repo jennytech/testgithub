@@ -1,19 +1,20 @@
 Rails.application.routes.draw do
-  get 'static_pages/landing_page'
-
+ 
   resources :products
   
   get 'static_pages/contact'
 
   get 'static_pages/index'
 
-   get 'static_pages/about'
+  get 'static_pages/about'
 
-   resources :orders, only: [:index, :show, :create, :destroy]
+  get 'static_pages/landing_page'
+
+  resources :orders, only: [:index, :show, :create, :destroy]
 
  
 
-   root 'static_pages#landing_page'
+  root 'static_pages#landing_page'
 
 
 
