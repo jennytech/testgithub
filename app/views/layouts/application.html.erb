@@ -30,6 +30,13 @@
           <li><%= link_to 'Sales', products_path %></li>
 
           <li><%= link_to 'Orders',orders_path %></li>
+          <li>
+           <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+            <% end %>
+          </li>
         </ul>
 
         <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
@@ -39,6 +46,10 @@
             <% end %>
       </div>
     </nav>
+
+    <% if notice %>
+    <p class="alert alert-info"><%= notice %></p>
+  <% end %>
   
   <div class="jumbotron center">
     <div class="center">
