@@ -7,7 +7,25 @@
     
   </div> <!-- end col-md-8-->
 
+  <% if signed_in? %>
+  <h4>Add a review:</h4>
+  <%= form_for([@product, @product.comments.build]) do |f| %>
+    <p>
+      <%= f.label :body, "Comments" %><br>
+      <%= f.text_area :body %>
+    </p>
+    <p>
+      <%= f.label :rating %><br>
+      <%= f.text_field :rating, class: "rating" %>
+    </p>  
+    <p>
+      <%= f.submit “Submit” %>
+    </p>
+  <% end %>
+<% end %>
+
 <div class="col-sm-4 col-lg-6">
+  
  <p>
   <strong>Name:</strong>
   <%= @product.name %></div>
