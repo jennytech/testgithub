@@ -35,6 +35,7 @@ group :development, :test do
   # gem 'byebug'
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.0'
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :development do
@@ -57,3 +58,4 @@ gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.0'
 
 gem 'rails-controller-testing'
+
