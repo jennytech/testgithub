@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-xs-12 col-lg-4">
      <%= image_tag @product.image_url,class: "img-responsive", width: "840"  %>
      
-  </div> <!-- end col-md-8-->
-</div> <!--row -->
+  </div> 
+</div> !-->
 
 
 <div class="row">
     <div class="col-xs-12 col-md-4">
       <%= image_tag(@product.image_url, data_zoom_image: @product.image_url, class: "img-zoom") %>
-    </div><!--end row div-->
+    </div>
 
     <div class="col-xs-12 col-md-8">
       <h1><%= @product.name %></h1>
@@ -26,7 +26,7 @@
       </p>
     </div>
 
-  </div><!--end row div-->
+  </div>
 
 
 
@@ -40,8 +40,7 @@
 
 <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-default" %> |
 <%= link_to 'Back', products_path, class: "btn btn-default" %>
-</div><!--col-->
-
+</div>
  
 
 
