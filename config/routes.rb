@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   
   post "static_pages/payments"
  
-
+  get "*path" => redirect("/")
 
 
 

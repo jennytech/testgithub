@@ -1,3 +1,5 @@
 <% @products.each do |product| %>
   <%= render @products %>
 <% end %>
+
+<% logger.debug "Product: #{@product.name}"%>
