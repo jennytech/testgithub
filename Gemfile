@@ -47,7 +47,7 @@ group :development do
   gem 'spork-rails'
   gem 'spork'
   gem 'guard-spork'
-  
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
