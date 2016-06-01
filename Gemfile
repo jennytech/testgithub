@@ -36,7 +36,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.0'
   gem "factory_girl_rails", "~> 4.0"
-  
+  gem 'byebug'
 end
 
 group :development do
@@ -47,7 +47,7 @@ group :development do
   gem 'spork-rails'
   gem 'spork'
   gem 'guard-spork'
-  gem 'byebug'
+  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
