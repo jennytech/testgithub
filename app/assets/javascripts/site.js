@@ -1,6 +1,6 @@
 $(document).on('ready page:load', function(){
     
-    
+    $('#img-zoom').elevateZoom();
     $('.rating').raty( { path: '../assets/raty', scoreName: 'comment[rating]' });
     $('.rated').raty({ path: '../assets/raty',
       readOnly: true,
