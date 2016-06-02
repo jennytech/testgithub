@@ -1,5 +1,23 @@
-<% @products.each do |product| %>
-<% logger.debug "Product: #{@product.name}"%>
-  <%= render @products %>
-<% end %>
 
+
+<div class="container">
+      <div class="row">
+        <% @products.each do |product| %>
+        
+          <div class="col-sm-2 col-lg-6">
+          <% cache product do %>
+         
+            <p><%= product.name %></p>
+          <p><%= product.description %></p>
+          <p><%= product.image_url %></p>
+          
+          <p><%= link_to 'Show', product %></p>
+          <p><%= link_to 'Edit', edit_product_path(product) %></p>
+          <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        </div>
+        <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<%= @test_variable %>
